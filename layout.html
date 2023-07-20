@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ingenium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="/static/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" style="background-image: var(--bs-gradient);">
+      <div class="container-fluid" action="/">
+            <a class="navbar-brand" href="/" style="color:red;">
+                <h1>Ingenium</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              {%block list%}
+              {%endblock%}
+            </ul>
+      </div>
+    </nav>
+    <div class="container-fluid py-3">
+      <div class="d-sm-flex">
+       <div class="col-3">
+        <h5>Have a <strong style="color:purple">question?</strong> We're here to provide you with the answers and information you need.</h5>
+        <ul>
+            <li class="nav-item red" action="/what"><a class="nav-link" href="/what"><h5>What is Ingenium!?</h5></a></li>
+            <p>
+              Let's take you to a journey
+            </p>
+            <br>
+            <li class="nav-item red" action="/high"><a class="nav-link" href="/high"><h5>HighBoard</h5></a></li>
+            <p>
+              Know more about our highboard and their story
+            </p>
+            <br>
+            <li class="nav-item red" action="/artsmania"><a class="nav-link" href="/artsmania"><h5>Artsmania</h5></a></li>
+            <p>
+              The event that opened the way for our talents to shine
+            </p>
+            <br>
+            <li class="nav-item red" ation="/application"><a class="nav-link" href="/application"><h5>Application</h5></a></li>
+            <p>
+              Don't hestitate joining us and show the world your talent
+            </p>
+        </ul>
+       </div>
+       {%block main%}
+       {%endblock%}
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
