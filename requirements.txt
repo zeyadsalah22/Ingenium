@@ -1,4 +1,0 @@
-pip install flask
-pip install cs50
-pip install werkzeug
-pip install os
