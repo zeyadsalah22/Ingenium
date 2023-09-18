@@ -1,7 +1,8 @@
 from django.db import models
 
-class high(models.Model):
+class High(models.Model):
     order = models.IntegerField()
+    image = models.CharField(max_length=64,default='ingenium.jpeg')
     name = models.CharField(max_length=150)
     position = models.CharField(max_length=150)
     info = models.TextField()
@@ -10,7 +11,7 @@ class high(models.Model):
         return f"{self.name} is the {self.position}"
 
 
-class images(models.Model):
+class Image(models.Model):
     order = models.IntegerField()
     image = models.CharField(max_length=64)
     category = models.CharField(max_length=64)
@@ -18,7 +19,7 @@ class images(models.Model):
     def __str__(self):
         return f"{self.category} image: {self.image}"
 
-class questions(models.Model):
+class Question(models.Model):
     order = models.IntegerField()
     question = models.TextField()
     answer = models.TextField()

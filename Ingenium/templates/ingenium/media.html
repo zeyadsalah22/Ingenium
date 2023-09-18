@@ -42,12 +42,14 @@
         <div class="rectangle"></div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner ">
-                <div class="carousel-item active">
-                    <img src="/static/im1.jpeg" class="img-acc">
+                <div class="carousel-item active ">
+                    <img src="{% static 'ingenium/.jpeg' %}" class="img-acc">
                 </div>
+                {% for image in images%}
                 <div class="carousel-item">
-                    <img src="/static/im2.jpeg" class="img-acc">
+                    <img src="{% static 'ingenium/'|add:image.image %}" class="img-acc">
                 </div>
+                {%endfor%}
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -59,57 +61,19 @@
             </button>
         </div>
         <div class="accordion accordion-flush acc-block" id="accordionFlushExample">
+            {% for question in questions%}
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        What is the Social Media Committee?
+                <h2 class="accordion-header" id="flush-{{question.order}}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{question.order}}" aria-expanded="false" aria-controls="flush-collapse{{question.order}}">
+                        {{question.question}}
                     </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">The Social Media Committee is a dedicated team within our club responsible for managing and overseeing our online presence and engagement.
-                        We utilize various social media platforms to promote club activities,
-                        share relevant content, and connect with our members and the other students.</div>
+                <div id="flush-collapse{{question.order}}" class="accordion-collapse collapse" aria-labelledby="flush-{{question.order}}" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">{{question.answer}}</div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-heading">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseOne">
-                        What does the Social Media Committee do?
-                    </button>
-                </h2>
-                <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-heading" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">The Social Media Committee plays a crucial role in maintaining an active and engaging online presence for our club.
-                         We write posts, create and curate content, develop marketing campaigns and develop strategies to effectively communicate with the public.
-                         Our goal is to promote club events, share news and updates, and foster a vibrant online community.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Do I need to have background knowledge?
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Absolutely not! All we require is your unwavering passion to join us,
-                         and we will unlock a world of knowledge for you. From the very foundations to advanced strategies,
-                          we'll equip you with the skills to not only participate but thrive in the dynamic realm of digital marketing.
-                         Together, we'll pave the way for your success in this captivating field!
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        How does participating in the Social Media Committee benefit me?
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Participating in the Social Media Committee offers several benefits.
-                         You will be taught and gain valuable skills in social media management, market campaigns, content writing, and content creation.
-                          These skills are highly sought after in today's digital landscape. By joining the committee,
-                          you'll gain practical knowledge and skills that will propel your success in the dynamic realm of social media marketing.</div>
-                </div>
-            </div>
+            {%endfor%}
+            
         </div>
     </div>
 </div>
