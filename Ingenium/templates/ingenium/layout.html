@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ingenium</title>
+    <link href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="{% static 'ingenium/style.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" style="background-image: var(--bs-gradient);">
+      <div class="container-fluid" action="/">
+        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <rect x="2" y="7" width="2" height="2" rx="0.5" ry="0.5"></rect>
+            <rect x="6" y="7" width="2" height="2" rx="0.5" ry="0.5"></rect>
+            <rect x="10" y="7" width="2" height="2" rx="0.5" ry="0.5"></rect>
+          </svg>
+          <span class="d-none fs-6 pe-1">Browse</span>
+        </button>
+            <a class="navbar-brand" href="/">
+                <h1 class="red">Ingenium</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              {%block list%}
+              {%endblock%}
+            </ul>
+      </div>
+    </nav>
+    <div class="container-fluid ">
+      <div class="d-sm-flex">
+      <aside class="bd-sidebar col-2">
+        <nav class="navbar navbar-expand bd-links h-100 flex-column align-items-stretch pe-4 border-end sidenav" id="bd-docs-navb navbar-example3 bdSidebar" aria-label="Docs navigation"><ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+        <div class="offcanvas-lg offcanvas-start col-md-3 col-lg-2 d-md-block sidebar position-fixed" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">Have a <strong style="color:purple">question?</strong> We're here to provide you with the answers and information you need.</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
+          </div>
+          <nav class="nav  flex-column">
+            <li class="nav-item" action="/index"><a class="nav-link red side-item" href="https://zeyadsalah22-studious-spork-x746grw54xp3vj96-5000.preview.app.github.dev/#what"><h5>What is Ingenium!?</h5></a></li>
+            <p>
+              Let's take you to a journey
+            </p>
+            <br>
+            <li class="nav-item" action="/index"><a class="nav-link red side-item" href="https://zeyadsalah22-studious-spork-x746grw54xp3vj96-5000.preview.app.github.dev/#high"><h5>HighBoard</h5></a></li>
+            <p>
+              Know more about our highboard and their story
+            </p>
+            <br>
+            <li class="nav-item " action="/index"><a class="nav-link red side-item" href ="https://zeyadsalah22-studious-spork-x746grw54xp3vj96-5000.preview.app.github.dev/#artsmania"><h5>Artsmania</h5></a></li>
+            <p>
+              The event that opened the way for our talents to shine
+            </p>
+            <br>
+            <li class="nav-item" action="/index"><a class="nav-link red side-item" href="https://zeyadsalah22-studious-spork-x746grw54xp3vj96-5000.preview.app.github.dev/#application"><h5>Application</h5></a></li>
+            <p>
+              Don't hestitate joining us and show the world your talent
+            </p>
+          </nav>
+        </div>
+      </nav>
+      </aside>
+
+        {%block main%}
+        {%endblock%}
+
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.xyz/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Get references to the links and sidebar elements
+        const links = document.querySelectorAll('.side-item');
+        const sidebar = document.getElementById('bdSidebar');
+
+        // Add a click event listener to each link
+        links.forEach((link) => {
+          link.addEventListener('click', () => {
+            // Check if the sidebar is open
+            if (sidebar.classList.contains('show')) {
+              // If it is open, toggle it closed
+              const offcanvas = link.closest('.offcanvas-lg');
+              if (offcanvas) {
+                const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+                offcanvasInstance.hide();
+              }
+            }
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>

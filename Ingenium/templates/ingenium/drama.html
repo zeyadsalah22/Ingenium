@@ -1,0 +1,126 @@
+{%extends "ingenium/layout.html"%}
+{% load static %}
+{%block list%}
+<li class="nav-item" >
+  <a class="nav-link red" href="{% url 'drama' %}" ><h5>Drama</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'music' %}" ><h5>Music</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'literature' %}" ><h5>Literature</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'art' %}" ><h5>Art</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'photography' %}" ><h5>Photography</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'design' %}" ><h5>Design</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'media' %}" ><h5>Media</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'logistics' %}" ><h5>Logistics</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'hr' %}" ><h5>HR</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'pr' %}" ><h5>PR</h5></a>
+</li>
+{%endblock%}
+{%block main%}
+<div class="section mx-auto py-3">
+    <div class="px-4" style="width:70%;">
+        <h2>Drama Committee </h2>
+        <p>We're always looking for new members who are passionate about drama and who want to make a difference in the lives of the others.</p>
+    </div>
+    <div class="contain">
+        <div class="rectangle"></div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active ">
+                    <img src="/static/drama1.jpeg" class="img-acc">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/drama2.jpeg" class="img-acc">
+                </div>
+                <div class="carousel-item ">
+                    <img src="/static/drama3.jpeg" class="img-acc">
+                </div>
+                <div class="carousel-item ">
+                    <img src="/static/drama4.jpeg" class="img-acc">
+                </div>
+                <div class="carousel-item ">
+                    <img src="/static/drama5.jpeg" class="img-acc">
+                </div>
+                <div class="carousel-item ">
+                    <img src="/static/drama6.jpeg" class="img-acc">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/drama7.jpeg" class="img-acc">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/drama8.jpeg" class="img-acc">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/drama9.jpeg" class="img-acc">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="accordion accordion-flush acc-block" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-heading" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

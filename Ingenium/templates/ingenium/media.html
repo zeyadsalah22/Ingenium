@@ -1,0 +1,116 @@
+{%extends "ingenium/layout.html"%}
+{% load static %}
+{%block list%}
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'drama' %}" ><h5>Drama</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'music' %}" ><h5>Music</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'literature' %}" ><h5>Literature</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'art' %}" ><h5>Art</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'photography' %}" ><h5>Photography</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'design' %}" ><h5>Design</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link red" href="{% url 'media' %}" ><h5>Media</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'logistics' %}" ><h5>Logistics</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'hr' %}" ><h5>HR</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'pr' %}" ><h5>PR</h5></a>
+</li>
+{%endblock%}
+{%block main%}
+<div class="section mx-auto py-3">
+    <div class="px-4 cont">
+        <h2>Social media Committee </h2>
+        <p>Calling all social media enthusiasts! Join our committee to shape our club's online voice, engage with our community, and unlock your digital creativity.</p>
+    </div>
+    <div class="contain">
+        <div class="rectangle"></div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="/static/im1.jpeg" class="img-acc">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/im2.jpeg" class="img-acc">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="accordion accordion-flush acc-block" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        What is the Social Media Committee?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The Social Media Committee is a dedicated team within our club responsible for managing and overseeing our online presence and engagement.
+                        We utilize various social media platforms to promote club activities,
+                        share relevant content, and connect with our members and the other students.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseOne">
+                        What does the Social Media Committee do?
+                    </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-heading" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The Social Media Committee plays a crucial role in maintaining an active and engaging online presence for our club.
+                         We write posts, create and curate content, develop marketing campaigns and develop strategies to effectively communicate with the public.
+                         Our goal is to promote club events, share news and updates, and foster a vibrant online community.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Do I need to have background knowledge?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Absolutely not! All we require is your unwavering passion to join us,
+                         and we will unlock a world of knowledge for you. From the very foundations to advanced strategies,
+                          we'll equip you with the skills to not only participate but thrive in the dynamic realm of digital marketing.
+                         Together, we'll pave the way for your success in this captivating field!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        How does participating in the Social Media Committee benefit me?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Participating in the Social Media Committee offers several benefits.
+                         You will be taught and gain valuable skills in social media management, market campaigns, content writing, and content creation.
+                          These skills are highly sought after in today's digital landscape. By joining the committee,
+                          you'll gain practical knowledge and skills that will propel your success in the dynamic realm of social media marketing.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

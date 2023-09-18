@@ -1,0 +1,371 @@
+{%extends "ingenium/layout.html"%}
+{% load static %}
+{%block list%}
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'drama' %}" ><h5>Drama</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'music' %}" ><h5>Music</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'literature' %}" ><h5>Literature</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'art' %}" ><h5>Art</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'photography' %}" ><h5>Photography</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'design' %}" ><h5>Design</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'media' %}" ><h5>Media</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'logistics' %}" ><h5>Logistics</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'hr' %}" ><h5>HR</h5></a>
+</li>
+<li class="nav-item" >
+  <a class="nav-link" href="{% url 'pr' %}" ><h5>PR</h5></a>
+</li>
+{%endblock%}
+{%block main%}
+<div class="col-9 mx-auto ">
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+    <div id="what" class="py-3">
+      <div class="section">
+        <h2>Ingenium </h2>
+        <hr>
+        <p class="content" >
+          Welcome to Ingenium, the premier club at our university dedicated to nurturing and showcasing the immense talent of our students. Founded with a vision to empower individuals and provide a platform for artistic expression, Ingenium focuses on a diverse range of activities including acting, drawing, singing, playing musical instruments, capturing photos, designing, reading, and writing.
+        </p>
+      </div>
+      <img src="/static/h1.jpeg" class="img-fluid">
+      <br>
+      <br>
+      <p class="content" >
+        Our club boasts a vibrant community of students who are passionate about their respective artistic interests. Through our carefully curated committees, namely Drama, Music, Art, Photography, Graphic Design, and Literature, we foster an environment that encourages creativity, collaboration, and personal growth.
+      </p>
+      <p class="content" >
+        Each committee organizes engaging sessions and workshops tailored to their specific field, providing students with opportunities to enhance their skills, explore new techniques, and learn from industry professionals. Whether you're an aspiring actor, a budding artist, a talented musician, a shutterbug, a wordsmith, or have a passion for graphic design, Ingenium offers a platform to develop your abilities and pursue your artistic dreams.
+      </p>
+      <p class="content" >
+        Beyond our regular sessions, Ingenium's calendar is adorned with captivating events that add an extra dimension to campus life. From mesmerizing concerts that showcase the musical prowess of our members to captivating plays that transport audiences to new worlds, we believe in the power of entertainment to bring joy and meaningful experiences to our fellow students.
+      </p>
+      <p class="content" >
+        At Ingenium, we understand that artistic expression transcends boundaries and has the potential to unite individuals from all walks of life. Through our inclusive and supportive community, we aim to foster not only artistic growth but also lasting friendships and a sense of belonging.
+      </p>
+      <p class="content" >
+        Join us at Ingenium and unleash your creativity, explore your passions, and be part of a vibrant artistic community that embraces talent, innovation, and the boundless possibilities of artistic expression. Together, let's create unforgettable moments and leave an indelible mark on the artistic landscape of our university.
+      </p>
+    </div>
+    <div id="high" class="py-3">
+      <div class="section">
+        <h2>Highboard </h2>
+        <hr>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/zeyad.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Zeyad Salah</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Chairman</h5>
+                  <p class="card-text">3rd year CSE undergraduate student.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Abdelrahman Amr</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Vice-Chairman</h5>
+                  <p class="card-text">3rd year CSE undergraduate student.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Sama Mokhtar</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Secretary General</h5>
+                  <p class="card-text">3rd year Mechatronics undergraduate student.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">PR Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">PR Vice-Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">HR Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">HR Vice-Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Social media Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Graphic Design Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Graphic Design Vice-Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Logistics Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Logistics Vice-Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Photography Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Photography Vice-Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Drama Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Drama Vice-Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Music Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Music Vice-Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Literature Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Literature Vice-Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Art Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/static/im1.jpeg" class="card-img-top">
+              <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"><h5>Name</h5></div>
+                <div class="card-body">
+                  <h5 class="card-title">Art Vice-Head</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="artsmania" class="py-3">
+      <div class="section">
+        <h2>Artsmania</h2>
+        <hr>
+        <p class="content" >Join us as we take a nostalgic trip back to Artsmania, a spectacular event that unfolded last year, leaving an indelible mark on our university's cultural landscape.</p>
+      </div>
+      <div>
+        <img src="/static/h2.jpeg" class="img-fluid">
+      </div>
+      <br>
+      <p class="content" >Artsmania was a celebration of artistic excellence, bringing together a mesmerizing fusion of music, drama, and visual arts. As the curtains rose, our talented musicians from the Music Committee set the stage ablaze with captivating performances. Their melodic compositions and soul-stirring renditions resonated through the auditorium, captivating the audience's hearts and setting the tone for an unforgettable evening.</p>
+      <img src="/static/h3.jpeg" class="img-fluid">
+      <br>
+      <br>
+      <p class="content" >Following the musical extravaganza, the Drama Committee took center stage, presenting the enthralling play titled "Marionette." The talented cast, with their impeccable acting skills, brought the characters to life, immersing the audience in a world of emotions, laughter, and thought-provoking storytelling. The spellbinding performances left the spectators spellbound, showcasing the depth of talent within our very own university community.</p>
+      <img src="/static/h4.jpeg" class="img-fluid">
+      <br>
+      <br>
+      <p class="content" >At the end of Artsmania, our Art Committee hosted an exhilarating competition where our talented members showcased their breathtaking drawings. The audience participated by voting for their favorite artwork, fostering camaraderie and celebrating individual skills within our artistic community.</p>
+      <img src="/static/h5.jpeg" class="img-fluid">
+      <br>
+      <br>
+      <p class="content" >Artsmania provided a platform for our talented students to shine, fostering a spirit of collaboration, inspiration, and appreciation for the arts. It was a testament to the vibrant and diverse artistic community thriving within our university.</p>
+    </div>
+    </div>
+    <div id="application" class="py-3">
+      <div class="section">
+        <h2>Application </h2>
+        <hr>
+        <p>Application will open soon!</p>
+      </div>
+    </div>
+</div>
+</div>
+{%endblock%}
