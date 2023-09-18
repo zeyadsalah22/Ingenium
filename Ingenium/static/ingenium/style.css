@@ -42,6 +42,11 @@ img {
     color:#3b3a35;
 }
 @media (max-width: 768px) {
+    .img{
+        width:100%;
+        height:auto;
+    }
+
     .img-acc {
         float: none;
         margin: 0 auto;
