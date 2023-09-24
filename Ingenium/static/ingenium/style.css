@@ -17,8 +17,13 @@ img {
     color: white;
 }
 .accordion-button:not(.collapsed) {
-    background-color: #ec2222;
-    color: white;
+    background-color: #ec2222 ;
+    color: white ;
+    box-shadow: none ;
+  }
+
+.accordion-button.collapsed {
+    box-shadow:none;
 }
 .rectangle {
     position: absolute;
@@ -93,10 +98,10 @@ img{
     object-fit: contain;
 }
 .red{
-    color:red;
+    color:#ec2222;
 }
 a {
-    color:red;
+    color:#ec2222;
 }
 h1::after {
     content: "\00B7";
