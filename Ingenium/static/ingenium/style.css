@@ -13,11 +13,11 @@ img {
     border: none;
 }
 .accordion-button:hover {
-    background-color: red;
+    background-color: #ec2222;
     color: white;
 }
 .accordion-button:not(.collapsed) {
-    background-color: red;
+    background-color: #ec2222;
     color: white;
 }
 .rectangle {
