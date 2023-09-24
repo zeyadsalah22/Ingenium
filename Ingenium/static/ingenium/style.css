@@ -109,6 +109,3 @@ body::before{
     height:80px;
 }
 
-.card-img-top{
-    object-fit: fill;
-}
