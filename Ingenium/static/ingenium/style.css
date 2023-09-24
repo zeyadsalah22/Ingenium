@@ -14,11 +14,11 @@ img {
 }
 .accordion-button:hover {
     background-color: red;
-    color: black;
+    color: white;
 }
 .accordion-button:not(.collapsed) {
     background-color: red;
-    color: black;
+    color: white;
 }
 .rectangle {
     position: absolute;
